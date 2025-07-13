@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 function NavBar() {
   return (
@@ -44,9 +45,9 @@ function NavBar() {
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
-                to="/aiphotos"
+                to="/ai"
               >
-                AI Photos
+                AI
               </NavLink>
             </div>
           </div>

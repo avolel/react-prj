@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./NavBar";
 import About from "./About";
 import Home from "./Home";
-import AIPhotos from "./AIPhotos";
+import AI from "./AI";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/aiphotos" element={<AIPhotos />} />
+        <Route path="/ai" element={<AI />} />
       </Routes>
     </>
   );
