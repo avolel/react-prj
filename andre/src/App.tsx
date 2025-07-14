@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+import "bootstrap/dist/js/bootstrap.min.js";
 import NavBar from "./NavBar";
 import About from "./About";
 import Home from "./Home";
@@ -8,7 +9,6 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="container-fluid"></div>
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />

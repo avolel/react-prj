@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 README2.md
+*.jpg
+*.png

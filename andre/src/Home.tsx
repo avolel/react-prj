@@ -1,5 +1,13 @@
+import Carousel from "./Carousel";
+
 function Home() {
-  return <></>;
+  return (
+    <>
+      <main>
+        <Carousel />
+      </main>
+    </>
+  );
 }
 
 export default Home;
