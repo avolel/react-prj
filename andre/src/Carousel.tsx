@@ -31,31 +31,28 @@ function Carousel() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={A1} className="d-block w-100" alt="First Slide" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
+            <img
+              src={A1}
+              className="img-fluid d-block w-100"
+              alt="First Slide"
+            />
+            <div className="carousel-caption d-none d-md-block"></div>
           </div>
           <div className="carousel-item">
-            <img src={A2} className="d-block w-100" alt="Second Slide" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
+            <img
+              src={A2}
+              className="img-fluid d-block w-100"
+              alt="Second Slide"
+            />
+            <div className="carousel-caption d-none d-md-block"></div>
           </div>
           <div className="carousel-item">
-            <img src={A3} className="d-block w-100" alt="Third Slide" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
+            <img
+              src={A3}
+              className="img-fluid d-block w-100"
+              alt="Third Slide"
+            />
+            <div className="carousel-caption d-none d-md-block"></div>
           </div>
         </div>
         <button
