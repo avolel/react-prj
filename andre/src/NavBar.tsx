@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
+import Logo from "./assets/logo.png";
 
 function NavBar() {
   return (
@@ -8,7 +9,14 @@ function NavBar() {
         <nav className="navbar bg-dark navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
-              Andre R Volel
+              <img
+                src={Logo}
+                alt="Logo"
+                width="56"
+                height="44"
+                style={{ maxHeight: "48px" }}
+                className="d-inline-block align-text-top"
+              />
             </a>
             <button
               className="navbar-toggler"
@@ -27,14 +35,6 @@ function NavBar() {
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  to="/home"
-                >
-                  Home
-                </NavLink>
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
                   to="/about"
                 >
                   About
@@ -43,9 +43,9 @@ function NavBar() {
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  to="/ai"
+                  to="/ai-parking"
                 >
-                  AI
+                  AI Parking Violations
                 </NavLink>
               </div>
             </div>

@@ -1,6 +1,33 @@
 import ARV_Logo from "./assets/arv.jpg";
-
+import { useEffect } from "react";
 function About() {
+  useEffect(() => {
+    document.title =
+      "Andre Volel – Software Developer | AI & Web Solutions Architect";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Andre Volel is a software developer specializing in AI and web solutions, with over a decade of experience in building scalable applications."
+      );
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content =
+        "Andre Volel is a software developer specializing in AI and web solutions, with over a decade of experience in building scalable applications.";
+      document.head.appendChild(meta);
+    }
+
+    // Set canonical link
+    let canonical = document.querySelector("link[rel='canonical']");
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", "https://andrevolel.com/about");
+  }, []);
+
   return (
     <>
       <main>
